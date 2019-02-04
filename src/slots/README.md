@@ -37,3 +37,4 @@ There are currently seven available slotFills please refer to the individual ite
 * [PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
 * [PluginMoreMenuItem](plugin-more-menu-item)
 * [PluginPostStatusInfo](plugin-post-status-info)
+* [PluginBlockSettingsMenuItem](plugin-block-settings-menu-item)
