@@ -1,4 +1,4 @@
-# Gutenberg SlotFills
+# SlotFills
 
 Slotfills can be defined as components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
 
