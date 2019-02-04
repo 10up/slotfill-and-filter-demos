@@ -1,7 +1,7 @@
-#PluginSidebar
+# PluginSidebar
 
 
-##Example
+## Example
 
 ```js
 const { registerPlugin } = wp.plugins;
@@ -16,6 +16,6 @@ const PluginSidebarTest = () => {
 }
 registerPlugin( 'plugin-sidebar-test', { render: PluginSidebarTest } );
 ```
-##Location
+## Location
 
 ![Alt text](../../../../master/assets/images/plugin-post-status-info-location.png?raw=true "Optional Title")
