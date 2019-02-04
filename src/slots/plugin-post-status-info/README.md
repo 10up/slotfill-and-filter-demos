@@ -22,4 +22,4 @@ registerPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );
 
 ![Alt text](../../../../master/assets/images/plugin-post-status-info-location.png?raw=true "PluginPostStatusInfo Location")
 
-[Back to SlotFills](./src/slots)
+[Back to SlotFills](../slots)
