@@ -1,6 +1,6 @@
 # PluginBlockSettingsMenuItem
 
-This slot appears in the more menu of the block controls.
+
 
 ## Example
 
@@ -19,7 +19,7 @@ const PluginBlockSettingsMenuGroupTest = () => (
 registerPlugin( 'block-settings-menu-group-test', { render: PluginBlockSettingsMenuGroupTest } );
 ```
 ## Location
-
+This slot appears in the more menu of the block controls.
 ![Alt text](../../../../master/assets/images/plugin-block-settings-menu-item-screenshot.png?raw=true "PluginBlockSettingsMenuItem Location")
 
 [Back to SlotFills](../)
