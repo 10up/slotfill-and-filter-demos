@@ -106,18 +106,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-more-menu-item */ \"./src/slots/plugin-more-menu-item/index.js\");\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0__);\n//import './plugin-sidebar';\n\n//import './plugin-sidebar-more-menu-item';\n//import './plugin-post-status-info';\n//import './plugin-block-settings-menu-item';\n\n//# sourceURL=webpack:///./src/slots/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-sidebar-more-menu-item */ \"./src/slots/plugin-sidebar-more-menu-item/index.js\");\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0__);\n//import './plugin-sidebar';\n//import './plugin-more-menu-item';\n\n//import './plugin-post-status-info';\n//import './plugin-block-settings-menu-item';\n\n//# sourceURL=webpack:///./src/slots/index.js?");
 
 /***/ }),
 
-/***/ "./src/slots/plugin-more-menu-item/index.js":
-/*!**************************************************!*\
-  !*** ./src/slots/plugin-more-menu-item/index.js ***!
-  \**************************************************/
+/***/ "./src/slots/plugin-sidebar-more-menu-item/index.js":
+/*!**********************************************************!*\
+  !*** ./src/slots/plugin-sidebar-more-menu-item/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;\n\n\nvar MyButtonMoreMenuItemTest = function MyButtonMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tPluginMoreMenuItem,\n\t\t{\n\t\t\ticon: 'smiley',\n\t\t\tonClick: function onClick() {\n\t\t\t\talert('Button Clicked');\n\t\t\t}\n\t\t},\n\t\t'More Menu Item'\n\t);\n};\n\nregisterPlugin('more-menu-item-test', { render: MyButtonMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-more-menu-item/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar _wp$editPost = wp.editPost,\n    PluginSidebar = _wp$editPost.PluginSidebar,\n    PluginSidebarMoreMenuItem = _wp$editPost.PluginSidebarMoreMenuItem;\nvar Fragment = wp.element.Fragment;\n\n\nvar PluginSidebarMoreMenuItemTest = function PluginSidebarMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tFragment,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\tPluginSidebarMoreMenuItem,\n\t\t\t{\n\t\t\t\ttarget: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\"\n\t\t\t},\n\t\t\t\"Expanded Sidebar - More item\"\n\t\t),\n\t\twp.element.createElement(\n\t\t\tPluginSidebar,\n\t\t\t{\n\t\t\t\tname: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\",\n\t\t\t\ttitle: \"My Sidebar\" },\n\t\t\t\"Content of the sidebar\"\n\t\t)\n\t);\n};\n\nregisterPlugin('plugin-sidebar-expanded-test', { render: PluginSidebarMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar-more-menu-item/index.js?");
 
 /***/ })
 
