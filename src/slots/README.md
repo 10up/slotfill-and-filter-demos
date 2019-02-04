@@ -9,6 +9,6 @@ In order to use them, we must leverage the [@wordpress/plugins](https://wordpres
 There are currently seven available slotFills please refer to the individual items below for usage and example details
 
 
-[PluginSidebar](plugin-sidebar)
-[PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
-[PluginMoreMenuItem](plugin-more-menu-item)
+* [PluginSidebar](plugin-sidebar)
+* [PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
+* [PluginMoreMenuItem](plugin-more-menu-item)
