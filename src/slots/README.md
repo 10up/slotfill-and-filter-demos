@@ -1,4 +1,4 @@
-## Gutenberg SlotFills
+#Gutenberg SlotFills
 
 Slotfills can be defined as components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
 
@@ -29,7 +29,7 @@ registerPlugin( 'plugin-sidebar-test', { render: myRenderMethod} );
 ```
 
 
-### Currently available slotFills and examples
+## Currently available slotFills and examples
 
 There are currently seven available slotFills please refer to the individual items below for usage and example details:
 
