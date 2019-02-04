@@ -3,7 +3,11 @@ const { PluginSidebar } = wp.editPost;
 
 const PluginSidebarTest = () => {
 	return(
-		<PluginSidebar name='plugin-sidebar-test' title='My Plugin'>
+		<PluginSidebar
+			name='plugin-sidebar-test'
+			title='My Plugin'
+			icon="smiley"
+		>
 			<p>Plugin Sidebar</p>
 		</PluginSidebar>
 	)
