@@ -13,6 +13,7 @@ In order to access the slotFills, we need to do three things:
 3. Register the plugin.
 
 
+
 Here is an example using the `PluginSidebar` slotFill:
 ```js
 const { registerPlugin } = wp.plugins;
@@ -27,7 +28,6 @@ const myRenderMethod = () => {
 }
 registerPlugin( 'plugin-sidebar-test', { render: myRenderMethod} );
 ```
-
 
 ## Currently available slotFills and examples
 
