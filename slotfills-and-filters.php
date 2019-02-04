@@ -5,7 +5,7 @@ Plugin Name: Gutenberg SlotFill and Filter demos
 
 namespace Welcher\SlotFillAndFilterDemos;
 
-add_action( 'enqueue_block_editor_assets', 'enqueue_ad_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_ad_block_editor_assets' );
 function enqueue_ad_block_editor_assets() {
 	wp_enqueue_script(
 		'gb-slots-and-filters', // Handle.
