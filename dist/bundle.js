@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slots__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slots */ \"./src/slots/index.js\");\n\n//import './filters';\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slots__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slots */ \"./src/slots/index.js\");\n //import './filters';\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -117,7 +117,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginBlockSettingsMenuItem = wp.editPost.PluginBlockSettingsMenuItem;\n\n\nvar PluginBlockSettingsMenuGroupTest = function PluginBlockSettingsMenuGroupTest() {\n\treturn wp.element.createElement(PluginBlockSettingsMenuItem, {\n\t\tallowedBlockNames: 'core/paragraph',\n\t\ticon: 'smiley',\n\t\tlabel: 'Menu item text',\n\t\tonClick: function onClick() {\n\t\t\talert('clicked');\n\t\t} });\n};\n\nregisterPlugin('block-settings-menu-group-test', { render: PluginBlockSettingsMenuGroupTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-block-settings-menu-item/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginBlockSettingsMenuItem = wp.editPost.PluginBlockSettingsMenuItem;\n\nvar PluginBlockSettingsMenuGroupTest = function PluginBlockSettingsMenuGroupTest() {\n  return React.createElement(PluginBlockSettingsMenuItem, {\n    allowedBlockNames: \"core/paragraph\",\n    icon: \"smiley\",\n    label: \"Menu item text\",\n    onClick: function onClick() {\n      alert('clicked');\n    }\n  });\n};\n\nregisterPlugin('block-settings-menu-group-test', {\n  render: PluginBlockSettingsMenuGroupTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-block-settings-menu-item/index.js?");
 
 /***/ }),
 
@@ -128,7 +128,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginBlockSettingsMe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;\n\n\nvar MyButtonMoreMenuItemTest = function MyButtonMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tPluginMoreMenuItem,\n\t\t{\n\t\t\ticon: 'smiley',\n\t\t\tonClick: function onClick() {\n\t\t\t\talert('Button Clicked');\n\t\t\t}\n\t\t},\n\t\t'More Menu Item'\n\t);\n};\n\nregisterPlugin('more-menu-item-test', { render: MyButtonMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-more-menu-item/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;\n\nvar MyButtonMoreMenuItemTest = function MyButtonMoreMenuItemTest() {\n  return React.createElement(PluginMoreMenuItem, {\n    icon: \"smiley\",\n    onClick: function onClick() {\n      alert('Button Clicked');\n    }\n  }, \"More Menu Item\");\n};\n\nregisterPlugin('more-menu-item-test', {\n  render: MyButtonMoreMenuItemTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-more-menu-item/index.js?");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostPublishPanel = wp.editPost.PluginPostPublishPanel;\n\n\nvar PluginPostPublishPanelTest = function PluginPostPublishPanelTest() {\n\treturn wp.element.createElement(\n\t\tPluginPostPublishPanel,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Post Publish Panel'\n\t\t)\n\t);\n};\n\nregisterPlugin('post-publish-panel-test', { render: PluginPostPublishPanelTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-post-publish-panel/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostPublishPanel = wp.editPost.PluginPostPublishPanel;\n\nvar PluginPostPublishPanelTest = function PluginPostPublishPanelTest() {\n  return React.createElement(PluginPostPublishPanel, null, React.createElement(\"p\", null, \"Post Publish Panel\"));\n};\n\nregisterPlugin('post-publish-panel-test', {\n  render: PluginPostPublishPanelTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-post-publish-panel/index.js?");
 
 /***/ }),
 
@@ -150,7 +150,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostPublishPane
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostStatusInfo = wp.editPost.PluginPostStatusInfo;\n\n\nvar PluginPostStatusInfoTest = function PluginPostStatusInfoTest() {\n\treturn wp.element.createElement(\n\t\tPluginPostStatusInfo,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Post Status Info SlotFill'\n\t\t)\n\t);\n};\n\nregisterPlugin('post-status-info-test', { render: PluginPostStatusInfoTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-post-status-info/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostStatusInfo = wp.editPost.PluginPostStatusInfo;\n\nvar PluginPostStatusInfoTest = function PluginPostStatusInfoTest() {\n  return React.createElement(PluginPostStatusInfo, null, React.createElement(\"p\", null, \"Post Status Info SlotFill\"));\n};\n\nregisterPlugin('post-status-info-test', {\n  render: PluginPostStatusInfoTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-post-status-info/index.js?");
 
 /***/ }),
 
@@ -161,7 +161,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostStatusInfo 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPrePublishPanel = wp.editPost.PluginPrePublishPanel;\n\n\nvar PluginPrePublishPanelTest = function PluginPrePublishPanelTest() {\n\treturn wp.element.createElement(\n\t\tPluginPrePublishPanel,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t' Pre Publish Panel '\n\t\t)\n\t);\n};\n\nregisterPlugin('pre-publish-panel-test', { render: PluginPrePublishPanelTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-pre-post-publish-panel/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPrePublishPanel = wp.editPost.PluginPrePublishPanel;\n\nvar PluginPrePublishPanelTest = function PluginPrePublishPanelTest() {\n  return React.createElement(PluginPrePublishPanel, null, React.createElement(\"p\", null, \" Pre Publish Panel \"));\n};\n\nregisterPlugin('pre-publish-panel-test', {\n  render: PluginPrePublishPanelTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-pre-post-publish-panel/index.js?");
 
 /***/ }),
 
@@ -172,7 +172,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPrePublishPanel
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar _wp$editPost = wp.editPost,\n    PluginSidebar = _wp$editPost.PluginSidebar,\n    PluginSidebarMoreMenuItem = _wp$editPost.PluginSidebarMoreMenuItem;\nvar Fragment = wp.element.Fragment;\n\n\nvar PluginSidebarMoreMenuItemTest = function PluginSidebarMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tFragment,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\tPluginSidebarMoreMenuItem,\n\t\t\t{\n\t\t\t\ttarget: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\"\n\t\t\t},\n\t\t\t\"Expanded Sidebar - More item\"\n\t\t),\n\t\twp.element.createElement(\n\t\t\tPluginSidebar,\n\t\t\t{\n\t\t\t\tname: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\",\n\t\t\t\ttitle: \"My Sidebar\" },\n\t\t\t\"Content of the sidebar\"\n\t\t)\n\t);\n};\n\nregisterPlugin('plugin-sidebar-expanded-test', { render: PluginSidebarMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar-more-menu-item/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar _wp$editPost = wp.editPost,\n    PluginSidebar = _wp$editPost.PluginSidebar,\n    PluginSidebarMoreMenuItem = _wp$editPost.PluginSidebarMoreMenuItem;\nvar Fragment = wp.element.Fragment;\n\nvar PluginSidebarMoreMenuItemTest = function PluginSidebarMoreMenuItemTest() {\n  return React.createElement(Fragment, null, React.createElement(PluginSidebarMoreMenuItem, {\n    target: \"sidebar-name\",\n    icon: \"smiley\"\n  }, \"Expanded Sidebar - More item\"), React.createElement(PluginSidebar, {\n    name: \"sidebar-name\",\n    icon: \"smiley\",\n    title: \"My Sidebar\"\n  }, \"Content of the sidebar\"));\n};\n\nregisterPlugin('plugin-sidebar-expanded-test', {\n  render: PluginSidebarMoreMenuItemTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar-more-menu-item/index.js?");
 
 /***/ }),
 
@@ -183,7 +183,7 @@ eval("var registerPlugin = wp.plugins.registerPlugin;\nvar _wp$editPost = wp.edi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginSidebar = wp.editPost.PluginSidebar;\n\n\nvar PluginSidebarTest = function PluginSidebarTest() {\n\treturn wp.element.createElement(\n\t\tPluginSidebar,\n\t\t{\n\t\t\tname: 'plugin-sidebar-test',\n\t\t\ttitle: 'My Plugin',\n\t\t\ticon: 'smiley'\n\t\t},\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Plugin Sidebar'\n\t\t)\n\t);\n};\nregisterPlugin('plugin-sidebar-test', { render: PluginSidebarTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginSidebar = wp.editPost.PluginSidebar;\n\nvar PluginSidebarTest = function PluginSidebarTest() {\n  return React.createElement(PluginSidebar, {\n    name: \"plugin-sidebar-test\",\n    title: \"My Plugin\",\n    icon: \"smiley\"\n  }, React.createElement(\"p\", null, \"Plugin Sidebar\"));\n};\n\nregisterPlugin('plugin-sidebar-test', {\n  render: PluginSidebarTest\n});\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar/index.js?");
 
 /***/ })
 
