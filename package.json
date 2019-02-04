@@ -1,7 +1,7 @@
 {
-  "name": "good-first-bugs-bot",
+  "name": "slotfills-and-filters",
   "version": "1.0.0",
-  "description": "A Twitter bot that tweets out tickets flagged as Good First Bugs",
+  "description": "Gutenberg SlotFill and Filter demos",
   "main": "dist/app.js",
   "dependencies": {},
   "devDependencies": {
@@ -18,7 +18,6 @@
     "webpack-cli": "^3.2.1"
   },
   "scripts": {
-    "start": "node --no-deprecation ./dist/bundle.js",
     "dev": "webpack --watch"
   },
   "author": "Ryan Welcher",
