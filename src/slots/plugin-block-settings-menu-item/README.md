@@ -1,4 +1,4 @@
-# PluginPostStatusInfo
+# PluginBlockSettingsMenuItem
 
 This slot appears in the more menu of the block controls.
 
