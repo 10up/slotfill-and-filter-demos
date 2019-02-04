@@ -18,4 +18,4 @@ registerPlugin( 'plugin-sidebar-test', { render: PluginSidebarTest } );
 ```
 ##Location
 
-![Alt text](../../../../assets/images/plugin-post-status-info-location.png?raw=true "Optional Title")
+![Alt text](../../../../master/assets/images/plugin-post-status-info-location.png?raw=true "Optional Title")
