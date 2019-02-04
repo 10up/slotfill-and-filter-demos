@@ -39,3 +39,4 @@ There are currently seven available slotFills please refer to the individual ite
 * [PluginPostStatusInfo](plugin-post-status-info)
 * [PluginBlockSettingsMenuItem](plugin-block-settings-menu-item)
 * [PluginPrePublishPanel](plugin-pre-post-publish-panel)
+* [PluginPostPublishPanel](plugin-post-publish-panel)
