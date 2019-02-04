@@ -19,4 +19,4 @@ registerPlugin( 'plugin-sidebar-test', { render: PluginSidebarTest } );
 ## Location
 
 
-[Back to SlotFills](../slots)
+[Back to SlotFills](../)
