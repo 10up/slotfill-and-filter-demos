@@ -106,7 +106,40 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-sidebar-more-menu-item */ \"./src/slots/plugin-sidebar-more-menu-item/index.js\");\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_0__);\n//import './plugin-sidebar';\n//import './plugin-more-menu-item';\n\n//import './plugin-post-status-info';\n//import './plugin-block-settings-menu-item';\n\n//# sourceURL=webpack:///./src/slots/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_sidebar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-sidebar */ \"./src/slots/plugin-sidebar/index.js\");\n/* harmony import */ var _plugin_sidebar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_sidebar__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugin-more-menu-item */ \"./src/slots/plugin-more-menu-item/index.js\");\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugin-sidebar-more-menu-item */ \"./src/slots/plugin-sidebar-more-menu-item/index.js\");\n/* harmony import */ var _plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_plugin_sidebar_more_menu_item__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _plugin_post_status_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plugin-post-status-info */ \"./src/slots/plugin-post-status-info/index.js\");\n/* harmony import */ var _plugin_post_status_info__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_plugin_post_status_info__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _plugin_block_settings_menu_item__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./plugin-block-settings-menu-item */ \"./src/slots/plugin-block-settings-menu-item/index.js\");\n/* harmony import */ var _plugin_block_settings_menu_item__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_plugin_block_settings_menu_item__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/slots/index.js?");
+
+/***/ }),
+
+/***/ "./src/slots/plugin-block-settings-menu-item/index.js":
+/*!************************************************************!*\
+  !*** ./src/slots/plugin-block-settings-menu-item/index.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginBlockSettingsMenuItem = wp.editPost.PluginBlockSettingsMenuItem;\n\n\nvar PluginBlockSettingsMenuGroupTest = function PluginBlockSettingsMenuGroupTest() {\n\treturn wp.element.createElement(PluginBlockSettingsMenuItem, {\n\t\tallowedBlockNames: 'core/paragraph',\n\t\ticon: 'smiley',\n\t\tlabel: 'Menu item text',\n\t\tonClick: function onClick() {\n\t\t\talert('clicked');\n\t\t} });\n};\n\nregisterPlugin('block-settings-menu-group-test', { render: PluginBlockSettingsMenuGroupTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-block-settings-menu-item/index.js?");
+
+/***/ }),
+
+/***/ "./src/slots/plugin-more-menu-item/index.js":
+/*!**************************************************!*\
+  !*** ./src/slots/plugin-more-menu-item/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;\n\n\nvar MyButtonMoreMenuItemTest = function MyButtonMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tPluginMoreMenuItem,\n\t\t{\n\t\t\ticon: 'smiley',\n\t\t\tonClick: function onClick() {\n\t\t\t\talert('Button Clicked');\n\t\t\t}\n\t\t},\n\t\t'More Menu Item'\n\t);\n};\n\nregisterPlugin('more-menu-item-test', { render: MyButtonMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-more-menu-item/index.js?");
+
+/***/ }),
+
+/***/ "./src/slots/plugin-post-status-info/index.js":
+/*!****************************************************!*\
+  !*** ./src/slots/plugin-post-status-info/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginPostStatusInfo = wp.editPost.PluginPostStatusInfo;\n\n\nvar PluginPostStatusInfoTest = function PluginPostStatusInfoTest() {\n\treturn wp.element.createElement(\n\t\tPluginPostStatusInfo,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Post Status Info SlotFill'\n\t\t)\n\t);\n};\n\nregisterPlugin('post-status-info-test', { render: PluginPostStatusInfoTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-post-status-info/index.js?");
 
 /***/ }),
 
@@ -118,6 +151,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plu
 /***/ (function(module, exports) {
 
 eval("var registerPlugin = wp.plugins.registerPlugin;\nvar _wp$editPost = wp.editPost,\n    PluginSidebar = _wp$editPost.PluginSidebar,\n    PluginSidebarMoreMenuItem = _wp$editPost.PluginSidebarMoreMenuItem;\nvar Fragment = wp.element.Fragment;\n\n\nvar PluginSidebarMoreMenuItemTest = function PluginSidebarMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tFragment,\n\t\tnull,\n\t\twp.element.createElement(\n\t\t\tPluginSidebarMoreMenuItem,\n\t\t\t{\n\t\t\t\ttarget: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\"\n\t\t\t},\n\t\t\t\"Expanded Sidebar - More item\"\n\t\t),\n\t\twp.element.createElement(\n\t\t\tPluginSidebar,\n\t\t\t{\n\t\t\t\tname: \"sidebar-name\",\n\t\t\t\ticon: \"smiley\",\n\t\t\t\ttitle: \"My Sidebar\" },\n\t\t\t\"Content of the sidebar\"\n\t\t)\n\t);\n};\n\nregisterPlugin('plugin-sidebar-expanded-test', { render: PluginSidebarMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar-more-menu-item/index.js?");
+
+/***/ }),
+
+/***/ "./src/slots/plugin-sidebar/index.js":
+/*!*******************************************!*\
+  !*** ./src/slots/plugin-sidebar/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginSidebar = wp.editPost.PluginSidebar;\n\n\nvar PluginSidebarTest = function PluginSidebarTest() {\n\treturn wp.element.createElement(\n\t\tPluginSidebar,\n\t\t{\n\t\t\tname: 'plugin-sidebar-test',\n\t\t\ttitle: 'My Plugin',\n\t\t\ticon: 'smiley'\n\t\t},\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Plugin Sidebar'\n\t\t)\n\t);\n};\nregisterPlugin('plugin-sidebar-test', { render: PluginSidebarTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar/index.js?");
 
 /***/ })
 
