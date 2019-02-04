@@ -5,6 +5,13 @@ Each slotfill or filter is explained and has an example.
 
 This is meant to be a working document and will change as Gutenberg does.
 
+## Local setup
+
+1. Clone this repository into the plugin directory of a WordPress installation.
+2. Run `npm install` from the root of the plugin
+3. Run 'npm run dev' to compile the files and tell weback to watch for changes.
+
+
 ## Section
 
 * [SlotFills](./src/slots)
