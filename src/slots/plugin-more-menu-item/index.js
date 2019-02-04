@@ -6,7 +6,7 @@ const MyButtonMoreMenuItemTest = () => (
 		icon="smiley"
 		onClick={ () => { alert( 'Button Clicked' ) } }
 	>
-		My button title
+		More Menu Item
 	</PluginMoreMenuItem>
 );
 

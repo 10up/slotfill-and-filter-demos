@@ -106,18 +106,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_sidebar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-sidebar */ \"./src/slots/plugin-sidebar/index.js\");\n/* harmony import */ var _plugin_sidebar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_sidebar__WEBPACK_IMPORTED_MODULE_0__);\n\n//import './plugin-sidebar-more-menu-item';\n//import './plugin-more-menu-item';\n//import './plugin-post-status-info';\n//import './plugin-block-settings-menu-item';\n\n//# sourceURL=webpack:///./src/slots/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugin-more-menu-item */ \"./src/slots/plugin-more-menu-item/index.js\");\n/* harmony import */ var _plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_plugin_more_menu_item__WEBPACK_IMPORTED_MODULE_0__);\n//import './plugin-sidebar';\n\n//import './plugin-sidebar-more-menu-item';\n//import './plugin-post-status-info';\n//import './plugin-block-settings-menu-item';\n\n//# sourceURL=webpack:///./src/slots/index.js?");
 
 /***/ }),
 
-/***/ "./src/slots/plugin-sidebar/index.js":
-/*!*******************************************!*\
-  !*** ./src/slots/plugin-sidebar/index.js ***!
-  \*******************************************/
+/***/ "./src/slots/plugin-more-menu-item/index.js":
+/*!**************************************************!*\
+  !*** ./src/slots/plugin-more-menu-item/index.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginSidebar = wp.editPost.PluginSidebar;\n\n\nvar PluginSidebarTest = function PluginSidebarTest() {\n\treturn wp.element.createElement(\n\t\tPluginSidebar,\n\t\t{\n\t\t\tname: 'plugin-sidebar-test',\n\t\t\ttitle: 'My Plugin',\n\t\t\ticon: 'smiley'\n\t\t},\n\t\twp.element.createElement(\n\t\t\t'p',\n\t\t\tnull,\n\t\t\t'Plugin Sidebar'\n\t\t)\n\t);\n};\nregisterPlugin('plugin-sidebar-test', { render: PluginSidebarTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-sidebar/index.js?");
+eval("var registerPlugin = wp.plugins.registerPlugin;\nvar PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;\n\n\nvar MyButtonMoreMenuItemTest = function MyButtonMoreMenuItemTest() {\n\treturn wp.element.createElement(\n\t\tPluginMoreMenuItem,\n\t\t{\n\t\t\ticon: 'smiley',\n\t\t\tonClick: function onClick() {\n\t\t\t\talert('Button Clicked');\n\t\t\t}\n\t\t},\n\t\t'More Menu Item'\n\t);\n};\n\nregisterPlugin('more-menu-item-test', { render: MyButtonMoreMenuItemTest });\n\n//# sourceURL=webpack:///./src/slots/plugin-more-menu-item/index.js?");
 
 /***/ })
 
