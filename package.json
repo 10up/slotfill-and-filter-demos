@@ -1,0 +1,26 @@
+{
+  "name": "good-first-bugs-bot",
+  "version": "1.0.0",
+  "description": "A Twitter bot that tweets out tickets flagged as Good First Bugs",
+  "main": "dist/app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "classnames": "^2.2.6",
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "start": "node --no-deprecation ./dist/bundle.js",
+    "dev": "webpack --watch"
+  },
+  "author": "Ryan Welcher",
+  "license": "ISC"
+}
