@@ -5,6 +5,7 @@ Allows filtering of the props for the `save` function.
 [Offical docs](https://wordpress.org/gutenberg/handbook/designers-developers/developers/filters/block-filters/#blocks-getsavecontent-extraprops)
 
 ## Example
+In this example, we set all of the blocks to have a background color of red.
 
 ```js
 const { addFilter } = wp.hooks;
