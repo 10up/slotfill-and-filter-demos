@@ -12,7 +12,7 @@ This is meant to be a working document and will change as Gutenberg does.
 3. Run `npm run dev` to compile the files and tell webpack to watch for changes.
 
 
-## Section
+## Sections
 
 * [SlotFills](./src/slots)
 * [Filters](./src/filters)
