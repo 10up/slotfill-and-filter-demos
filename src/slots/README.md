@@ -1,16 +1,18 @@
 # SlotFills
 
-Slotfills can be defined as components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
+Slot and Fill are components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
+Please see the [official docs](https://wordpress.org/gutenberg/handbook/designers-developers/developers/components/slot-fill/) for more details.
 
 In order to use them, we must leverage the [@wordpress/plugins](https://wordpress.org/gutenberg/handbook/designers-developers/developers/packages/packages-plugins/) api to register a plugin that will inject our items.
 
 ## Usage overview
 
-In order to access the slotFills, we need to do three things:
+In order to access the slotFills, we need to do four things:
 
-1. Import the `registerPlugin` method form the plugin API
-2. Define a method to render our changes. Our changes/additions will be wrapped in the slotFill component.
-3. Register the plugin.
+1. Import the `registerPlugin` method from `wp.plugins`.
+2. Import the slotFill we want from `wp.editPost`.
+3. Define a method to render our changes. Our changes/additions will be wrapped in the slotFill component we imported.
+4. Register the plugin.
 
 
 
