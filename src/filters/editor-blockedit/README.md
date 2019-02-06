@@ -17,7 +17,7 @@ However, it is the recommended pattern and should be followed.
 
 ```js
 const { createHigherOrderComponent } = wp.compose;
-const { addFilter} = wp.hooks;
+const { addFilter } = wp.hooks;
 const { Fragment } = wp.element;
 const { InspectorControls } = wp.editor;
 const { PanelBody } = wp.components;
