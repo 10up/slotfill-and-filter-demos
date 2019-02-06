@@ -29,3 +29,4 @@ addFilter( 'blocks.getSaveContent.extraProps', 'my-custom-namespace', addSavePro
 ** Note that this is not an comprehensive list.
 
 * [blocks.getSavedContent.extraProps](./blocks-getsavecontent-extraprops)
+* [editor.BlockEdit](./editor-blockedit)
