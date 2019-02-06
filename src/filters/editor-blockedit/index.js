@@ -1,5 +1,5 @@
 const { createHigherOrderComponent } = wp.compose;
-const { addFilter} = wp.hooks;
+const { addFilter } = wp.hooks;
 const { Fragment } = wp.element;
 const { InspectorControls } = wp.editor;
 const { PanelBody } = wp.components;
