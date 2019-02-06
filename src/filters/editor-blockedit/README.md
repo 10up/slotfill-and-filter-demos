@@ -9,6 +9,11 @@ Used to modify the block’s edit component. It receives the original block `Blo
 ## Example
 In this example, we are adding a new section in the Block settings sidebar for every block.
 
+This example utilizes `createHigherOrderComponent` to augment the existing `InspectorControls` with the new custom ones.
+
+Please review the official docs for [@wordpress/compose](https://github.com/WordPress/gutenberg/tree/a6c36e53974ac8a9fdd6163e61b54064cfd8910f/packages/compose) 
+for more information on the compose package and Higher Order Components.
+
 ```js
 const { createHigherOrderComponent } = wp.compose;
 const { addFilter} = wp.hooks;
