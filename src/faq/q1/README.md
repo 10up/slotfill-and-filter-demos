@@ -3,6 +3,7 @@
 This question has come up multiple times for me.
 
 To be clear, this is the sidebar we are discussing:
+
 ![Document Sidebar](../../../../master/assets/images/q1-screenshot.png?raw=true)
 
 
