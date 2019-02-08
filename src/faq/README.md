@@ -5,5 +5,5 @@ This is by no means an exhaustive list but they represent questions that I have 
 
 ## Questions
 
-1. [How do I add a Panel the Document sidebar?]('./q1)
+1. [How do I add a Panel the Document sidebar?](./q1)
 2. Can I add another tab to the Settings sidebar?
