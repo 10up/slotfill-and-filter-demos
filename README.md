@@ -9,6 +9,7 @@ This is meant to be a working document and will change as Gutenberg does and as 
 
 * [SlotFills](./src/slots)
 * [Filters](./src/filters)
+* [FAQ]('./)
 
 ## Local setup
 
