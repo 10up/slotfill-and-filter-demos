@@ -16,3 +16,9 @@ This is meant to be a working document and will change as Gutenberg does and as 
 1. Clone this repository into the plugin directory of a WordPress installation.
 2. Run `npm install` from the root of the plugin.
 3. Run `npm run dev` to compile the files and tell webpack to watch for changes.
+
+
+## Contributing.
+
+If you have an example you want to share, please submit a PR. If you have a question for the FAQ, please open an issue.
+Any feedback is welcome!
