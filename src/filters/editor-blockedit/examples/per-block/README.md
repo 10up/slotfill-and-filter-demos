@@ -10,7 +10,7 @@ const { InspectorControls } = wp.editor;
 const { PanelBody } = wp.components;
 
 /**
- * Filter the InspectorControls for all blocks
+ * Filter the InspectorControls for a single block type.
  */
 const withInspectorControls =  createHigherOrderComponent( ( BlockEdit ) => {
 	return ( props ) => {
@@ -27,7 +27,7 @@ const withInspectorControls =  createHigherOrderComponent( ( BlockEdit ) => {
 			</Fragment>
 		);
 	};
-}, "withInspectorControl" );
+},"withInspectorControl" );
 
 addFilter( 'editor.BlockEdit', 'my-plugin/with-inspector-controls', withInspectorControls );
 ```
