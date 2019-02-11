@@ -18,7 +18,7 @@ This is meant to be a working document and will change as Gutenberg does and as 
 3. Run `npm run dev` to compile the files and tell webpack to watch for changes.
 
 
-## Contributing.
+## Contributing
 
 If you have an example you want to share, please submit a PR. If you have a question for the FAQ, please open an issue.
 Any feedback is welcome!
