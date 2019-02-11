@@ -48,7 +48,7 @@ There are currently seven available slotFills please refer to the individual ite
 
 ## How do they work?
 
-SlotFills are created using `createSlotFill`. This creates two components, `Slot` and `Fill` which are then used to create a new component that is exported on the `wp.plugin` global.
+SlotFills are created using `createSlotFill`. This creates two components, `Slot` and `Fill` which are then used to create a new component that is exported on the `wp.plugins` global.
 
 **Definition of the `PluginPostStatusInfo` SlotFill**
 ```js
