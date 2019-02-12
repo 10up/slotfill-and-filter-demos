@@ -6,7 +6,7 @@ Receives `classname` and `blockName` as parameters and returns a string represen
 
 This appears in the Add Block interface and the class is added to the `<button>` tag for each block.
 
-**Note: This filter is not in the [official docs](https://wordpress.org/gutenberg/handbook/designers-developers/developers/filters/block-filters/)**
+**Note: This filter is not listed in the [official docs](https://wordpress.org/gutenberg/handbook/designers-developers/developers/filters/block-filters/)**
 ## Examples
 
 Please refer to the individual examples below for more details.
