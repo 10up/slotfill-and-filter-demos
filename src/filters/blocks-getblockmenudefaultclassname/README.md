@@ -4,7 +4,7 @@ Returns the block's default menu item classname from its name.
 
 Receives `classname` and `blockName` as parameters and returns a string representing the block's default menu item class.
 
-This appears in the Add Block interface and wraps the icon for each registered block.
+This appears in the Add Block interface and the class is added to the `<button>` tag for each block.
 
 ## Examples
 
