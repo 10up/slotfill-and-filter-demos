@@ -35,7 +35,7 @@ const SomeOtherComponent = ( props ) => {
     </Fragment>
 }
 ```
-### registering a plugin to add an item to the new SlotFill.
+### Register a plugin to add an item to the new SlotFill.
 
 Using registerPlugin, we add items to our custom SlotFill just like any other one.
 
