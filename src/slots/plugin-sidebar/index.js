@@ -6,10 +6,10 @@ const PluginSidebarTest = () => {
 		<PluginSidebar
 			name='plugin-sidebar-test'
 			title='My Plugin'
-			icon="smiley"
+			icon="twitter"
 		>
 			<p>Plugin Sidebar</p>
 		</PluginSidebar>
 	)
-}
-registerPlugin( 'plugin-sidebar-test', { render: PluginSidebarTest } );
+};
+registerPlugin( 'plugin-sidebar-test', { render: PluginSidebarTest, icon: 'twitter', priority: 1 } );

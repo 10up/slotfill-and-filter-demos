@@ -5,4 +5,4 @@ import './plugin-post-status-info';
 import './plugin-block-settings-menu-item';
 import './plugin-pre-post-publish-panel';
 import './plugin-post-publish-panel';
-import './plugin-document-setting';
+//import './plugin-document-setting';
