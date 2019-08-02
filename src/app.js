@@ -1,2 +1,2 @@
-import './slots';
+import './slots/examples';
 import './filters';

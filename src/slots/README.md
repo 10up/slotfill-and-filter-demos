@@ -1,177 +1,60 @@
-# SlotFills
+## Basic SlotFill System  ##
+There are three components that make up a basic SlotFill system.
 
-Slot and Fill are components that have been exposed to allow developers to inject items into some predefined places in the Gutenberg admin experience.
-Please see the [official docs](https://wordpress.org/gutenberg/handbook/designers-developers/developers/components/slot-fill/) for more details.
+### Slot ##
+Wherever this component is rendered any Fills with the same name will have their content rendered here.
 
-In order to use them, we must leverage the [@wordpress/plugins](https://wordpress.org/gutenberg/handbook/designers-developers/developers/packages/packages-plugins/) api to register a plugin that will inject our items.
-
-## Usage overview
-
-In order to access the slotFills, we need to do four things:
-
-1. Import the `registerPlugin` method from `wp.plugins`.
-2. Import the slotFill we want from `wp.editPost`.
-3. Define a method to render our changes. Our changes/additions will be wrapped in the slotFill component we imported.
-4. Register the plugin.
-
-
-
-Here is an example using the `PluginPostStatusInfo` slotFill:
-```js
-const { registerPlugin } = wp.plugins;
-const { PluginPostStatusInfo } = wp.editPost;
-
-
-const PluginPostStatusInfoTest = () => {
-	return(
-		<PluginPostStatusInfo>
-			<p>Post Status Info SlotFill</p>
-		</PluginPostStatusInfo>
-	)
-}
-
-registerPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );
+#### Props: ####
+* {string}  __name__             The name of the Slot.
+* {Object}  __fillProps__         Object that is passed to Fills.
+* {Boolean} __bubblesVirtually__ Changes event bubbling behavior     
+### Example ###
+```jsx
+const { Slot } = wp.components;
+<Slot 
+    name="my-slot-name" 
+    fillProps={ { key: 'value' } } 
+    bubblesVirtually
+/>
 ```
 
-## Currently available slotFills and examples
+### Fill ##
+The contents of the Fill will be rendered in the Slot with the same name property. Regardless of where the Fill is rendered.
+#### Props: ####
+* {string} __name__ The name of the Slot that this Fill associated with.
 
-There are currently seven available slotFills please refer to the individual items below for usage and example details:
-
-* [PluginDocumentSettingPanel](plugin-document-setting-panel)
-* [PluginSidebar](plugin-sidebar)
-* [PluginMoreMenuItem](plugin-more-menu-item)
-* [PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
-* [PluginPostStatusInfo](plugin-post-status-info)
-* [PluginBlockSettingsMenuItem](plugin-block-settings-menu-item)
-* [PluginPrePublishPanel](plugin-pre-post-publish-panel)
-* [PluginPostPublishPanel](plugin-post-publish-panel)
-
-
-## How do they work?
-
-SlotFills are created using `createSlotFill`. This creates two components, `Slot` and `Fill` which are then used to create a new component that is exported on the `wp.plugins` global.
-
-**Definition of the `PluginPostStatusInfo` SlotFill**
-```js
-/**
- * Defines as extensibility slot for the Status & Visibility panel.
- */
-
-/**
- * WordPress dependencies
- */
-import { createSlotFill, PanelRow } from '@wordpress/components';
-
-export const { Fill, Slot } = createSlotFill( 'PluginPostStatusInfo' );
-
-const PluginPostStatusInfo = ( { children, className } ) => (
-	<Fill>
-		<PanelRow className={ className }>
-			{ children }
-		</PanelRow>
-	</Fill>
-);
-
-PluginPostStatusInfo.Slot = Slot;
-
-export default PluginPostStatusInfo;
-
+### Example ###
+```jsx
+const { Fill } = wp.components;
+<Fill name="my-slot-name">
+    Fill Contents
+</Fill>
 ```
 
-This new Slot is then exposed in the editor. The example below is from core and represents the Status & Visibility panel.
-
-As we can see, the `<PluginPostStatusInfo.Slot>` is wrapping all of the items that will appear in the panel.
-Any items that have been added via the SlotFill ( see the example above ), will be included in the `fills` parameter and be displayed betwee the `<PostAuthor/>` and `<PostTrash/>` components.
-
-**Core**
-```js
-function PostStatus( { isOpened, onTogglePanel } ) {
-	return (
-		<PanelBody className="edit-post-post-status" title={ __( 'Status & Visibility' ) } opened={ isOpened } onToggle={ onTogglePanel }>
-			<PluginPostStatusInfo.Slot>
-				{ ( fills ) => (
-					<Fragment>
-						<PostVisibility />
-						<PostSchedule />
-						<PostFormat />
-						<PostSticky />
-						<PostPendingStatus />
-						<PostAuthor />
-						{ fills }
-						<PostTrash />
-					</Fragment>
-				) }
-			</PluginPostStatusInfo.Slot>
-		</PanelBody>
-	);
-}
-```
-* [PluginDocumentSettingPanel](plugin-document-setting-panel)
-* [PluginSidebar](plugin-sidebar)
-* [PluginMoreMenuItem](plugin-more-menu-item)
-* [PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
-* [PluginPostStatusInfo](plugin-post-status-info)
-* [PluginBlockSettingsMenuItem](plugin-block-settings-menu-item)
-* [PluginPrePublishPanel](plugin-pre-post-publish-panel)
-* [PluginPostPublishPanel](plugin-post-publish-panel)
+### SlotFillProvider ##
+This component is the glue that connects Fills with their associated Slot. Both the Slot and Fill components must be wrapped by this component.
+#### Props: ####
+None
 
 
-## How do they work?
+### Basic Slot Fill System Example ###
+* Root of the application renders a `SlotFillProvider`.
+* A named Slot is rendered in the app.
+* A Fill with the same name will occupy the Slot, even if rendered elsewhere.
 
-SlotFills are created using `createSlotFill`. This creates two components, `Slot` and `Fill` which are then used to create a new component that is exported on the `wp.plugins` global.
 
-**Definition of the `PluginPostStatusInfo` SlotFill**
-```js
-/**
- * Defines as extensibility slot for the Status & Visibility panel.
- */
-
-/**
- * WordPress dependencies
- */
-import { createSlotFill, PanelRow } from '@wordpress/components';
-
-export const { Fill, Slot } = createSlotFill( 'PluginPostStatusInfo' );
-
-const PluginPostStatusInfo = ( { children, className } ) => (
-	<Fill>
-		<PanelRow className={ className }>
-			{ children }
-		</PanelRow>
-	</Fill>
-);
-
-PluginPostStatusInfo.Slot = Slot;
-
-export default PluginPostStatusInfo;
-
+```jsx
+ const { Fill, Slot, SlotFillProvider } = wp.components;
+<SlotFillProvider>
+    <Slot 
+        name="my-slot-name" 
+        fillProps={ { key: 'value' } } 
+        bubblesVirtually
+    />
+    <Fill name="my-slot-name">
+        Fill Contents
+    </Fill>
+</SlotFillProvider>
 ```
 
-This new Slot is then exposed in the editor. The example below is from core and represents the Status & Visibility panel.
-
-As we can see, the `<PluginPostStatusInfo.Slot>` is wrapping all of the items that will appear in the panel.
-Any items that have been added via the SlotFill ( see the example above ), will be included in the `fills` parameter and be displayed betwee the `<PostAuthor/>` and `<PostTrash/>` components.
-
-**Core**
-```js
-function PostStatus( { isOpened, onTogglePanel } ) {
-	return (
-		<PanelBody className="edit-post-post-status" title={ __( 'Status & Visibility' ) } opened={ isOpened } onToggle={ onTogglePanel }>
-			<PluginPostStatusInfo.Slot>
-				{ ( fills ) => (
-					<Fragment>
-						<PostVisibility />
-						<PostSchedule />
-						<PostFormat />
-						<PostSticky />
-						<PostPendingStatus />
-						<PostAuthor />
-						{ fills }
-						<PostTrash />
-					</Fragment>
-				) }
-			</PluginPostStatusInfo.Slot>
-		</PanelBody>
-	);
-}
-```
+[Next: How Does Gutenberg Do It?](./how-does-gutenberg-do-it.md)
