@@ -1,12 +1,13 @@
-const { registerPlugin } = wp.plugins;
 const { PluginBlockSettingsMenuItem } = wp.editPost;
-
-const PluginBlockSettingsMenuGroupTest = () => (
+import { TenUp } from '../../svg/icons';
+const PluginBlockSettingsMenuGroupDemo = () => (
 	<PluginBlockSettingsMenuItem
+		icon={ TenUp }
 		allowedBlockNames='core/paragraph'
-		icon='smiley'
 		label='Menu item text'
-		onClick={ () => { alert( 'clicked' )} } />
+		onClick={ () => { alert( 'clicked' ) } }
+		/>
 )
+export default PluginBlockSettingsMenuGroupDemo;
 
-registerPlugin( 'block-settings-menu-group-test', { render: PluginBlockSettingsMenuGroupTest } );
+

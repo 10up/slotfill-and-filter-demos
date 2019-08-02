@@ -1,13 +1,12 @@
-const { registerPlugin } = wp.plugins;
+
 const { PluginPostStatusInfo } = wp.editPost;
 
-
-const PluginPostStatusInfoTest = () => {
+const PluginPostStatusInfoDemo= () => {
 	return(
 		<PluginPostStatusInfo>
 			<p>Post Status Info SlotFill</p>
 		</PluginPostStatusInfo>
 	)
 }
+export default PluginPostStatusInfoDemo;
 
-registerPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );

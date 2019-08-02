@@ -1,8 +1,38 @@
-import './plugin-sidebar';
-import './plugin-more-menu-item';
-import './plugin-sidebar-more-menu-item';
-import './plugin-post-status-info';
-import './plugin-block-settings-menu-item';
-import './plugin-pre-post-publish-panel';
-import './plugin-post-publish-panel';
-//import './plugin-document-setting';
+/**
+ * Get registerPlugin.
+ */
+const { registerPlugin } = wp.plugins;
+
+/**
+ * Import our components that contain the SlotFills
+ */
+import { TenUp } from '../svg/icons';
+
+import PluginBlockSettingsMenuGroupDemo from './plugin-block-settings-menu-item';
+import PluginDocumentSettingPanelDemo from './plugin-document-setting-panel';
+import PluginMoreMenuItemDemo from './plugin-more-menu-item';
+import PluginPostPublishPanelDemo from './plugin-post-publish-panel';
+import PluginPostStatusInfoDemo from './plugin-post-status-info';
+import PluginPrePublishPanelDemo from './plugin-pre-publish-panel';
+import PluginSidebarMoreMenuItemDemo from './plugin-sidebar-more-menu-item';
+
+
+/**
+ * One plugin to rule them all.
+ */
+const CombinedSlotFillsDemo = () => (
+	<>
+		<PluginBlockSettingsMenuGroupDemo />
+		<PluginDocumentSettingPanelDemo />
+		<PluginMoreMenuItemDemo />
+		<PluginPostPublishPanelDemo />
+		<PluginPostStatusInfoDemo />
+		<PluginPrePublishPanelDemo />
+		<PluginSidebarMoreMenuItemDemo />
+	</>
+);
+
+/**
+ * register the plugin.
+ */
+registerPlugin( 'slotfill-and-filter-demos', { render: CombinedSlotFillsDemo, icon: TenUp } );

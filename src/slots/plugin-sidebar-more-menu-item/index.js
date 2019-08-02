@@ -7,21 +7,20 @@ const {
 
 const { Fragment } = wp.element;
 
-const PluginSidebarMoreMenuItemTest = () => (
+const PluginSidebarMoreMenuItemDemo = () => (
 	<Fragment>
 		<PluginSidebarMoreMenuItem
 			target="sidebar-name"
-			icon="smiley"
 		>
 			Expanded Sidebar - More item
 		</PluginSidebarMoreMenuItem>
 		<PluginSidebar
 			name="sidebar-name"
-			icon="smiley"
 			title="My Sidebar" >
 			Content of the sidebar
 		</PluginSidebar>
 	</Fragment>
 )
 
-registerPlugin( 'plugin-sidebar-expanded-test', { render: PluginSidebarMoreMenuItemTest } );
+export default PluginSidebarMoreMenuItemDemo;
+
