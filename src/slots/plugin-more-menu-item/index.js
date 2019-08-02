@@ -1,13 +1,11 @@
-const { registerPlugin } = wp.plugins;
-const { PluginMoreMenuItem,} = wp.editPost;
+const { PluginMoreMenuItem } = wp.editPost;
 
-const MyButtonMoreMenuItemTest = () => (
+const PluginMoreMoreItemDemo = () => (
 	<PluginMoreMenuItem
-		icon="smiley"
 		onClick={ () => { alert( 'Button Clicked' ) } }
 	>
 		More Menu Item
 	</PluginMoreMenuItem>
 );
+export default PluginMoreMoreItemDemo;
 
-registerPlugin( 'more-menu-item-test', { render: MyButtonMoreMenuItemTest } );

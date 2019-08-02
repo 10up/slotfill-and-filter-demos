@@ -1,12 +1,13 @@
-const { registerPlugin } = wp.plugins;
+
 const { PluginPostPublishPanel } = wp.editPost;
 
-const PluginPostPublishPanelTest = () => {
+const PluginPostPublishPanelDemo = () => {
 	return (
-		<PluginPostPublishPanel>
+		<PluginPostPublishPanel
+			title="Test"
+		>
 			<p>Post Publish Panel</p>
 		</PluginPostPublishPanel>
 	)
 }
-
-registerPlugin( 'post-publish-panel-test', { render: PluginPostPublishPanelTest } );
+export default PluginPostPublishPanelDemo;
