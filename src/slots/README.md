@@ -37,6 +37,7 @@ registerPlugin( 'post-status-info-test', { render: PluginPostStatusInfoTest } );
 
 There are currently seven available slotFills please refer to the individual items below for usage and example details:
 
+* [PluginDocumentSettingPanel](plugin-document-setting-panel)
 * [PluginSidebar](plugin-sidebar)
 * [PluginMoreMenuItem](plugin-more-menu-item)
 * [PluginSidebarMoreMenu](plugin-sidebar-more-menu-item)
