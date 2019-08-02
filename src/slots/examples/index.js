@@ -6,7 +6,7 @@ const { registerPlugin } = wp.plugins;
 /**
  * Import our components that contain the SlotFills
  */
-import { TenUp } from '../svg/icons';
+import { TenUp } from '../../svg/icons';
 
 import PluginBlockSettingsMenuGroupDemo from './plugin-block-settings-menu-item';
 import PluginDocumentSettingPanelDemo from './plugin-document-setting-panel';
