@@ -24,7 +24,7 @@ const PluginPostPublishPanel = ( { children, className, title, initialOpen = fal
 * __initialOpen__ `boolean`: Whether to have the panel initially opened. When no title is provided it is always opened.
 
  ## Inherits icon from registerPlugin()?
-No. There is a Pull Request open.
+Yes, as of version 6.5 of the Gutenberg plugin.
 
 ## Example
 ```jsx
