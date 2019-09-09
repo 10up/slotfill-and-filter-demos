@@ -7,7 +7,7 @@ There are currently 8 SlotsFills exposed for use on the `wp.editPost` object.
 * [PluginBlockSettingsMenuItem](./plugin-block-settings-menu-item.md)
 * [PluginSidebar](./plugin-sidebar.md)
 * [PluginSidebarMoreMenuItem](./plugin-sidebar-more-menu-item.md)
-* [PluginDocumentSettingPanel - new!](./plugin-document-setting-panel.md)
+* [PluginDocumentSettingPanel - Available in Gutenberg plugin as of version 6.1](./plugin-document-setting-panel.md)
 
 ### Internal SlotFills ##
 There are internal and special SlotFills as well. These are either not exposed or, in the case of `InspectorControls`, have certain uses. They include:
