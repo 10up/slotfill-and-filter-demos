@@ -5,6 +5,8 @@
  * Version: 1.0.0
  * Author: 10up, Ryan Welcher
  * Author URI: https://www.10up.com
+ * License:         GPLv2
+ * License URI:     https://spdx.org/licenses/GPL-2.0-or-later.html
 */
 
 namespace Tenup\SlotFillAndFilterDemos;
