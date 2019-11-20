@@ -2,12 +2,15 @@
   "name": "slotfills-and-filters",
   "version": "1.0.0",
   "description": "Gutenberg SlotFill and Filter demos",
+  "license": "GPLv2",
+  "repository": "https://github.com/10up/slotfill-and-filter-demos",
   "main": "dist/bundle.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "@wordpress/scripts": "^6.0.0",
     "babel-loader": "^8.0.5",
     "webpack": "^4.28.0",
     "webpack-cli": "^3.2.1"
@@ -15,6 +18,10 @@
   "scripts": {
     "dev": "webpack --watch"
   },
-  "author": "Ryan Welcher",
-  "license": "ISC"
+  "author": {
+    "name": "10up",
+    "email": "info@10up.com",
+    "url": "https://10up.com",
+    "role": "developer"
+  }
 }
