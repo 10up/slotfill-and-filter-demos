@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Gutenberg SlotFill and Filter demos",
   "license": "GPLv2",
+  "main": "src/index.js",
   "repository": "https://github.com/10up/slotfill-and-filter-demos",
-  "main": "dist/bundle.js",
   "devDependencies": {
     "@wordpress/scripts": "^6.0.0"
   },
   "scripts": {
-    "dev": "wp-scripts run start"
+    "dev": "wp-scripts start",
+    "build": "wp-scripts build"
   },
   "author": {
     "name": "10up",
