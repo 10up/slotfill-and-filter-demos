@@ -25,3 +25,7 @@ Each slotfill or filter is explained and has an example. This is meant to be a w
 
 If you have an example you want to share, please [submit a PR](https://github.com/10up/slotfill-and-filter-demos/compare). If you have a question for the FAQ, please [open an issue](https://github.com/10up/slotfill-and-filter-demos/issues/new/choose).
 Any feedback is welcome!
+
+## Like what you see?
+
+<a href="http://10up.com/contact/"><img src="https://10updotcom-wpengine.s3.amazonaws.com/uploads/2016/10/10up-Github-Banner.png" width="850" alt="Work with us at 10up"></a>
