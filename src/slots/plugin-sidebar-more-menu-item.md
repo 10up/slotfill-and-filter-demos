@@ -48,7 +48,7 @@ const PluginSidebarMoreMenuItemDemo = () => (
 		</PluginSidebar>
 	</>
 );
-registerPlugin( 'plugin-sidebar-plugin-sidebar-more-menu-item-demo', { render: PluginSidebarMoreMenuItemDem } );
+registerPlugin( 'plugin-sidebar-plugin-sidebar-more-menu-item-demo', { render: PluginSidebarMoreMenuItemDemo } );
 ```
 [Back: PluginSidebar ](./plugin-sidebar.md) | [Next: PluginDocumentSettingPanel ](./plugin-document-setting-panel.md)
 
