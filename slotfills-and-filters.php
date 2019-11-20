@@ -3,7 +3,7 @@
 Plugin Name: Gutenberg SlotFill and Filter demos
 */
 
-namespace Welcher\SlotFillAndFilterDemos;
+namespace Tenup\SlotFillAndFilterDemos;
 
 
 /**
