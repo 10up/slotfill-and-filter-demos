@@ -9,8 +9,7 @@
     "@wordpress/scripts": "^6.0.0"
   },
   "scripts": {
-    "dev": "wp-scripts start",
-    "build": "wp-scripts build"
+    "dev": "wp-scripts start"
   },
   "author": {
     "name": "10up",
