@@ -7,7 +7,20 @@ Each slotfill or filter is explained and has an example. This is meant to be a w
 
 ## Sections
 
-* [SlotFills](./src/slots)
+* [SlotFill Sysytem](./src/slots)
+	* [Basic SlotFill System](./src/slots)
+	* [How Does Gutenberg do it?](./src/slots/how-does-gutenberg-do-it.md)
+	* [wp.plugins API](./src/slots/wp-plugins-api.md)
+	* [Available SlotFills](./src/slots/available-slot-fills.md)
+		* [PluginPostStatusInfo](./src/slots/plugin-post-status-info.md)
+		* [PluginPrePublishPanel](./src/slots/plugin-pre-publish-panel.md)
+		* [PluginPostPublishPanel](./src/slots/plugin-post-publish-panel.md)
+		* [PluginMoreMenuItem](./src/slots/plugin-more-menu-item.md)
+		* [PluginBlockSettingsMenuItem](./src/slots/plugin-block-settings-menu-item.md)
+		* [PluginSidebar](./src/slots/plugin-sidebar.md)
+		* [PluginSidebarMoreMenuItem](./src/slots/plugin-sidebar-more-menu-item.md)
+		* [PluginDocumentSettingPanel](./src/slots/plugin-document-setting-panel.md)
+	* [Combine Them](./src/slots/hcombine-them.md)
 * [Filters](./src/filters)
 * [FAQ](./src/faq)
 
