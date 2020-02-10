@@ -1,7 +1,6 @@
 # PluginDocumentSettingPanel
 Renders items below the Status & Availability panel in the Document Sidebar.
 
-__Available in the Gutenberg plugin as of version 6.1__
 
 ## Component Structure ##
 ```jsx
