@@ -17,7 +17,7 @@ const PluginMyCustomSlotFill = ( { children, classname } ) => (
 	<Fill>{ children }</Fill>
 );
 
-PluginMyCustomSlotFillSlot = Slot;
+PluginMyCustomSlotFill.Slot = Slot;
 
 export default PluginMyCustomSlotFill;
 ```
