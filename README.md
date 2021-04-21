@@ -1,9 +1,11 @@
 # Gutenberg SlotFill and Filter demos
 
+**THIS REPO HAS BEEN ARCHIVED AS ITS CONTENT HAS BEEN PULLED INTO GUTENBERG'S DOCUMENTATION.**
+
 > This repo can be used as reference or can be installed as a plugin in any WordPress install to make code changes as needed.
 Each slotfill or filter is explained and has an example. This is meant to be a working document and will change as Gutenberg does and as I learn.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![GPLv2 License](https://img.shields.io/github/license/10up/slotfill-and-filter-demos.svg)](https://github.com/10up/slotfill-and-filter-demos/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-archived-red.svg)](#support-level) [![GPLv2 License](https://img.shields.io/github/license/10up/slotfill-and-filter-demos.svg)](https://github.com/10up/slotfill-and-filter-demos/blob/develop/LICENSE.md)
 
 ## Sections
 
@@ -19,7 +21,7 @@ Each slotfill or filter is explained and has an example. This is meant to be a w
 
 ## Support Level
 
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
+**Archived:** This project is no longer maintained by 10up. We are no longer responding to Issues or Pull Requests unless they relate to security concerns. We encourage interested developers to fork this project and make it their own!
 
 ## Contributing
 
